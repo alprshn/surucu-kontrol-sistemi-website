@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="6.Sürücüler.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,660,0,0" />
+    <script src="https://kit.fontawesome.com/fc453c7213.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@100;200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <title>Sürücüler</title>
+</head>
+<body>
+    
+    <div> <header>
+        <!--Öncelikle Burada nav barım için bir div oluşturdum ve içine header kısımını ekledim ardından header ımda ne olacaksa her birini sırası ile eklemeye başladım.-->
+        <img src="png/TEKNOFEST LOGO.png" alt="">
+        <!--Logo için burdad img ile logoyu ekledim.-->
+        <h1 style="font-family: 'Montserrat', sans-serif; margin-left: 10px;">Sürücü Kontrol Sistemi</h1>
+        <div class="headerleft">
+        <ul class="menu" style="display: flex;">
+            <li>
+                <a style="color: #000; font-family: 'Montserrat', sans-serif;" class="buttons" href="1.MainPage.html">Ana Sayfa</a>
+            </li>
+            <li>    
+                <a style="color: #000; font-family: 'Montserrat', sans-serif;" class="buttons" href="#">Sefer İşlemleri</a>
+                <ul class="kategori-sefer-ul" style=" width: 200px; height: 100px; margin-left: 30px; border-radius: 8px;  background-color:#ffde00; ">
+                    <li style="margin-bottom: 10px; margin-top: 30px;" class="kategori-sefer-1">
+                        <a style="text-decoration:none; color: #000; " href="3.SeferOlusturma.html">Sefer Oluşturma</a>
+                    </li>
+                    <hr style="background-color: white ;">
+                    <li>
+                        <a style="text-decoration:none; color: #000;"  class="kategori-sefer-1" href="4.Seferler.html">Seferler</a>
+                    </li>
+                </ul>
+
+
+            </li>
+            <li style="margin-right: 180px;" >
+                <a style="color: #000; font-family: 'Montserrat', sans-serif;" class="buttons" href="#">Sürücü İşlemleri</a>
+                <ul class="kategori-sefer-ul" style=" width: 200px; height: 100px; margin-left: 30px; border-radius: 8px;  background-color:#ffde00; ">
+                    <li style="margin-bottom: 10px; margin-top: 30px;" class="kategori-sefer-1">
+                        <a style="text-decoration:none; color: #000; " href="5.SurucuOlusturma.html">Sürücü Ekleme</a>
+                    </li>
+                    <hr style="background-color: white ;">
+                    <li>
+                        <a style="text-decoration:none; color: #000;"  class="kategori-sefer-1" href="6.Sürücüler.html">Sürücüler</a>
+                    </li>
+                </ul>
+            </li> 
+            <li>
+                <img style="  position: absolute; width: 11rem; height: auto; margin-left: -130px; margin-top: -75px;" src="png/teknofest-logo.png" alt="">
+            </li>
+        </ul>   
+       </div>
+       </header>
+   </div>
+   <div class="h2">Sürücü İşlemleri   |   Sürücüler</div>
+   <button id="addSurucuButton" type="submit" style=" cursor: pointer; border: none; font-family: 'Roboto Mono', monospace; font-weight: 900; box-shadow: 2px 2px 6px #000; border-radius: 6px; background-color: #ffde00; width: 200px; height: 40px; position: absolute; margin-top: -50px; margin-left: 890px; " >Sürücüleri Getir</button>
+
+
+    <div class="bigbox">
+        <div id="adddiv" style="border-radius: 40px 40px 0px 0px; display: flex; position: absolute;  width: 1765px; height: 60px; background-color: white; z-index: 97;" >
+        <h2 style="margin-top: 35px; margin-left: 221px ;">Ad</h2>
+        <h2 style=" margin-top: 35px; margin-left: 215px;">Soyad</h2>
+        <h2 style="margin-top: 35px; margin-left: 178px;">Kimlik No</h2>
+        <h2 style="margin-top: 35px; margin-left: 132.5px;">Telefon Numarası</h2>
+        <h2 style="margin-top: 35px; margin-left: 49px;">E-Posta</h2>
+        <h2 style="margin-top: 35px; margin-left: 156px;">Doğum Tarihi</h2>
+    </div>
+    <div style="display: block; overflow-y: scroll; ">
+        <div id="newsurucuadd" style="margin-top:66px; margin-left: 76px; margin-right: 40px;">
+
+
+
+           
+
+
+           
+
+           
+        </div>
+
+
+    </div>
+
+        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <script src="ui.js"></script>
+    <script src="stroage.js"></script>
+    <script src="surucu.js"></script>
+    <script src="project.js"></script>
+
+
+</body>
+</html>

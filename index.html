@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2.Login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="metin">Gelişen Teknoloji Güvenli Ulaşım</div>
+         <!--Burası metin kısmı bura ile metindeki büyük başlık oluşturdum-->
+    <div></div>
+    <div class="box">
+         <!--Burada box divi bizim kutumuz ve bu kutu içerisinde logo vb girş yapma kısımları yer alıyor-->
+        <img class="logo" src="png/TEKNOFEST LOGO.png" alt="">
+         <!--Burada belirlediğim şekilde logo yer alıyor-->
+        <h1>Sürücü Kontrol Sistemi</h1>
+         <!--Burası kutunun içinde bulunan başlık-->
+        <h2 class="username" style="font-family: 'Roboto Mono', monospace;" >Kullanıcı Adı</h2>
+        <input style="font-family: 'Roboto Mono', monospace; font-size: 15pt;" class="giris" id="giris" type="text">
+         <!--İnput input type="text" ile ben burada bir textbox eklemiş oldum çeşidini ise text halinde olmasını istedim-->
+        <h2 class="sifre" style="font-family: 'Roboto Mono', monospace;">Şifre</h2>
+        <input style="font-size: 15pt;" class="password" id="password" type="password"> <br>
+         <!--İnput input type="password" ile ben burada bir şifre için textbox eklemiş oldum çeşidini ise password halinde olmasını istedim-->
+         <div class="checkandgiris">
+        <input class="checkbox" id="checkbox" type="checkbox"> 
+        <h3 style="color: white;" >Beni Hatırla</h3>
+         <!--İnput input type="checkbox" ile ben burada bir checkbox için checkbox eklemiş oldum çeşidini ise checkbox halinde olmasını istedim-->
+        <a id="login" onClick="loginClick()" href="#" ><button>Giriş</button></a>   
+        </div>
+         <!--Burada a etiketi ile butonuma bir link yani adres vermiş oldum. Button etiketi ile de bir buton eklemiş oldum.-->
+        </div>
+    </form>
+    </div>
+</body>
+<script>
+
+
+    localStorage.setItem("kullaniciAd", "alper"); 
+    localStorage.setItem("kullaniciSifre", "Alper71."); 
+
+    var kulAdi = localStorage.getItem("kullaniciAd");
+    var pw = localStorage.getItem("kullaniciSifre");
+
+
+function validate(kAdi, kSifre) {
+
+        if (kulAdi == kAdi && pw == kSifre) {
+            window.location.href="1.MainPage.html"
+            
+        } else {
+            alert("Kullanıcı adı veya şifre yanlıştır. ");
+        }
+    }
+
+function loginClick()
+  {
+    
+    var kullaniciAdi = document.getElementById("giris").value
+    var sifre = document.getElementById("password").value
+    
+    localStorage.setItem("KontrolAd", kullaniciAdi);
+    localStorage.setItem("KontrolPw", sifre);
+
+    var kontrolAdi = localStorage.getItem("KontrolAd");
+    var kontrolPw = localStorage.getItem("KontrolPw");
+
+    validate(kontrolAdi, kontrolPw);
+      
+}
+
+
+
+ 
+</script>
+</html>

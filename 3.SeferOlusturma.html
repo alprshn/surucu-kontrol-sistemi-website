@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="3.SeferOlusturma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,660,0,0" />
+    <script src="https://kit.fontawesome.com/fc453c7213.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@100;200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <title>Sefer Oluşturma</title>
+</head>
+<body>
+    
+    <div> <header>
+        <!--Öncelikle Burada nav barım için bir div oluşturdum ve içine header kısımını ekledim ardından header ımda ne olacaksa her birini sırası ile eklemeye başladım.-->
+        <img src="png/TEKNOFEST LOGO.png" alt="">
+        <!--Logo için burdad img ile logoyu ekledim.-->
+        <h1 style="font-family: 'Montserrat', sans-serif; margin-left: 10px;">Sürücü Kontrol Sistemi</h1>
+        <div class="headerleft">
+        <ul class="menu" style="display: flex;">
+            <li>
+                <a style="color: #000; font-family: 'Montserrat', sans-serif;" class="buttons" href="1.MainPage.html">Ana Sayfa</a>
+            </li>
+            <li>    
+                <a style="color: #000; font-family: 'Montserrat', sans-serif;" class="buttons" href="#">Sefer İşlemleri</a>
+                <ul class="kategori-sefer-ul" style=" width: 200px; height: 100px; margin-left: 30px; border-radius: 8px;  background-color:#ffde00; ">
+                    <li style="margin-bottom: 10px; margin-top: 30px;" class="kategori-sefer-1">
+                        <a style="text-decoration:none; color: #000; " href="3.SeferOlusturma.html">Sefer Oluşturma</a>
+                    </li>
+                    <hr style="background-color: white ;">
+                    <li>
+                        <a style="text-decoration:none; color: #000;"  class="kategori-sefer-1" href="4.Seferler.html">Seferler</a>
+                    </li>
+                </ul>
+
+
+            </li>
+            <li style="margin-right: 180px;">
+                <a style="color: #000; font-family: 'Montserrat', sans-serif;" class="buttons" href="#">Sürücü İşlemleri</a>
+                <ul class="kategori-sefer-ul" style=" width: 200px; height: 100px; margin-left: 30px; border-radius: 8px;  background-color:#ffde00; ">
+                    <li style="margin-bottom: 10px; margin-top: 30px;" class="kategori-sefer-1">
+                        <a style="text-decoration:none; color: #000; " href="5.SurucuOlusturma.html">Sürücü Ekleme</a>
+                    </li>
+                    <hr style="background-color: white ;">
+                    <li>
+                        <a style="text-decoration:none; color: #000;"  class="kategori-sefer-1" href="6.Sürücüler.html">Sürücüler</a>
+                    </li>
+                </ul>
+            </li> 
+            <li>
+                <img style="  position: absolute; width: 11rem; height: auto; margin-left: -130px; margin-top: -75px;" src="png/teknofest-logo.png" alt="">
+            </li>
+        </ul>   
+       </div>
+       </header>
+   </div>
+   <div class="h2">Sefer İşlemleri   |   Sefer Oluşturma</div>
+   <div class="bigbox">
+     <form id="sefer-form">
+    <div style="display: flex; margin-left: 90px;
+    margin-top: 29px;">
+
+
+    <div>
+    <h2>Nereden</h2>
+    <div style="margin-bottom: 36px; border: 1px ; border-radius: 8px; ; background-color: #fef536;">
+        <i style="margin-left: 10px; margin-right:5px ;" class="fa-solid fa-location-dot"></i>
+    <input type="text" style="width: 225px; border-style: none; height:30px; font-size:13pt; background-color:#fef536;border-radius: 8px; font-family: 'Roboto Mono', monospace;"  id="nereden" required>
+    </div>
+
+    
+    <h2>Nereye</h2>
+    <div style=" margin-bottom: 36px; border: 1px ; border-radius: 8px; ; background-color: #fef536;">
+        <i style="margin-left: 10px; margin-right:5px ;" class="fa-solid fa-location-dot"></i>
+    <input type="text" style="width: 225px; border-style: none; height:30px; font-size:13pt; background-color:#fef536;border-radius: 8px; font-family: 'Roboto Mono', monospace;"  id="nereye" required>
+    </div>
+
+    <h2>Kalkış Tarihi</h2>
+    <input style="margin-bottom: 36px; width: 200px; height: 30px; font-size: 13pt; text-transform: uppercase; border-style: none; background-color:#fef536;border-radius: 8px;"  type="date" id="kalkis" required>
+    <h2>Varış Tarihi</h2>
+    <input style="width: 200px; height: 30px; font-size: 13pt; text-transform: uppercase; border-style: none; background-color:#fef536;border-radius: 8px;"  type="date" id="varis" required>
+</div>
+
+    <div style="margin-left: 206px;">    
+    <h2 >Kalkış Saati</h2>
+    <input style="margin-bottom: 36px; width: 100px; height: 30px; font-size: 13pt;border-style: none; background-color:#fef536;border-radius: 8px;" type="time" id="kalkissaati" required>
+    <h2>Varış Saati</h2>
+    <input style="margin-bottom: 36px; width: 100px; height: 30px; font-size: 13pt;border-style: none; background-color:#fef536;border-radius: 8px;" type="time" id="varissaati" required> 
+    <h2>Plaka</h2>
+
+
+    <div style="border: 1px ; border-radius: 8px; ; background-color: #fef536;">
+        <i class="fa-solid fa-bus-simple" style="margin-left: 10px; margin-right:5px ;"></i>    
+    <input type="text" style="width: 225px; border-style: none; height:30px; font-size:13pt; background-color:#fef536;border-radius: 8px; font-family: 'Roboto Mono', monospace;"  id="plaka" required>
+    </div>
+    
+</div>
+
+<div style="margin-left: 206px;">
+    <h2 id="kisiler">Sürücüler</h2>
+    <select id="selectKisiler" style=" margin-bottom: 15px; width: 225px; border-style: none; height:30px; font-size:13pt; display: block; background-color:#fef536;border-radius: 8px; font-family: 'Roboto Mono', monospace;">
+        <option id="optionKisiler"></option>
+      </select>
+      
+      
+      <input type="button"value="+" style=" margin-left: 230px; margin-top: -45px; cursor: pointer; background-color:#fff201    ; height: 30px; width: 30px; font-size: 15pt; border-radius: 50%; border-style: none ; position: absolute;" onclick="kisiEkle()">
+
+
+      <div>
+    <input  style=" margin-top: 47px; box-shadow: 2px 2px 6px #000; cursor: pointer; width: 100px; height: 30px; border-radius:8px; border-style: none ;  background-color: #fef536; font-family: 'Roboto Mono', monospace; font-weight: 900; " type="submit" value="Oluştur" required>
+</div>
+</div>
+</div>
+    </form>
+</div>
+
+
+</body> 
+
+<script>
+
+
+function kisiEkle(){
+
+    var getAdi = localStorage.getItem("adi");
+    var getSoyadi =localStorage.getItem("soyadi");
+
+    
+    var kisiler = document.getElementById('kisiler');
+    kisiler.innerHTML +=`
+    <select id="kisiler" style=" margin-bottom: 15px; width: 225px; border-style: none; height:30px; font-size:13pt; display: block; background-color:#fef536;border-radius: 8px; font-family: 'Roboto Mono', monospace;">
+        <option value="${getAdi}">${getAdi}</option>
+      </select>
+      `;
+      var selectKisiler = document.getElementById("selectKisiler");
+    selectKisiler.innerHTML += `<option id="optionKisiler">${getAdi}</option>`
+    
+      
+
+}
+var getAdi = localStorage.getItem("adi");
+
+var optionKisiler = document.getElementById('optionKisiler');
+optionKisiler.innerHTML = getAdi;
+
+
+
+ var form = document.getElementById('sefer-form')
+
+ form.addEventListener('submit', function(event){
+
+    event.preventDefault();
+    var nereden = document.getElementById('nereden').value
+
+    var nereye = document.getElementById('nereye').value
+
+    var kalkis = document.getElementById('kalkis').value
+
+    var varis = document.getElementById('varis').value
+
+    var kalkisSaati = document.getElementById('kalkissaati').value;
+
+    var varisSaati = document.getElementById('varissaati').value
+
+    var plaka = document.getElementById('plaka').value
+
+    
+    
+
+
+
+
+
+
+
+ // Adding Local Storage
+    localStorage.setItem("nereden", nereden); 
+    localStorage.setItem("nereye", nereye); 
+    localStorage.setItem("kalkis", kalkis); 
+    localStorage.setItem("varis", varis); 
+    localStorage.setItem("kalkissaati", kalkisSaati); 
+    localStorage.setItem("varissaati", varisSaati); 
+    localStorage.setItem("plaka", plaka);     
+    
+    alert("Sefer Sisteme Kaydedildi")
+
+ })
+
+</script>
+</html>

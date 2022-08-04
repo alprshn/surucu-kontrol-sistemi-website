@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ebeaea;
+}
+header{
+    background: #ffde00;
+    display:flex;
+    /* display:flex; sayesinde biz div içindeki ögeleri flex yapısına getiriyoruz ve bir kutu şekli alıyor bunun sayesinde kutular yan yana gelebiliyor  */
+    height:5rem;
+    /* height:5rem; sayesin 5 rem kalınlığında bir nav bar oluşmasını sağladım  */
+    width:100%;
+    /* width:100%; sayesinde nav barımın başdan sonuna kadar olmasını sağladım  */
+    margin-top: 50px;
+    /* margin-top: 50px; sayesinde nav barımın yukarıdan 50 px aşağı inmesini sağladım.  */
+    
+
+}
+input:focus {
+    
+    box-shadow: 0 0 0 3px none;
+    outline: none;
+}
+.bigbox{
+    background-color: white;
+    display: flex;
+    height: 625px;
+    width: 1765px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+    
+}
+
+.buttons{
+    margin-left: 30px;
+    text-decoration: none;
+    /*text-decoration: none; sayesinde linklerin altındaki çizgiler gitti. */
+    font-size: 15pt;
+}
+ul{
+    list-style: none;
+    /*list-style: none; sayesinde li etiketinin başında bulunan noktayı kaldırdım.*/
+}
+img{
+    margin-left: 77.5px;
+}
+
+h1{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.headerleft{    
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;  
+    margin-right: 77.5px;
+}
+
+.h2{
+    margin-left: 77.5px;
+    margin-top: 94px;
+    margin-bottom: 18px;
+}
+h2{
+    font-size: 14.7pt; font-family: 'Roboto Mono', monospace;
+}
+.kategori-sefer-1{
+    font-size: 13pt;
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.kategori-sefer-ul{
+
+    display: none;
+    position: absolute;
+}
+
+.menu :hover .kategori-sefer-ul{
+    display: block;
+}
+

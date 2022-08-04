@@ -1,0 +1,133 @@
+*{
+    /*Burada "*{}" bu işaret genele seçicidir yani tüm kodlar içerir kullanmamım sebebi margin ve padding sıfırlayarak sayfadaki boşluğu sıfırladım.*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+/*Burada background ile arka plan fotoğrafı ekledim.*/
+/*Burada background-size:cover ile fotoğrafın arka plana tam oturmasını sağladım.*/
+/*Burada background-repeat: no-repeat; ile fotoğrafın tekrarlanmasını önledim.*/
+/*Burada background-attachment:fixed; ile resmin çnündeki siyah filtrenin sabit durmasını sağladı*/
+/*Burada linear-gradient( rgba(20, 20, 20, .8), rgba(20,20,20, .8)) ile resmin önünne siyah filtre ekleme işlemini yaptım.*/
+    background: linear-gradient( rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.603)), url("png/Login-background-image.png");
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    display: inline-flex;
+}
+.box{
+    /* Burada box class ına boyut ve çerçeve rengi verdik width ve height ile boyut verdik. */
+    /* Burada border-style: solid; özelliği ile çerçevenin yani kenarların düz bir şekilde olmasını sağladık. */
+    display: block;
+    width: 500px;
+    height: 600px;
+    border-style: solid;
+    border: none;
+    border-radius: 8px;
+    /* float: right; ile box kutumun sağa kaymasını sağladım.*/
+    margin-top: 180px;
+    margin-bottom: 116px;
+    /* margin top ile yukarıdan boşluğu belirledik*/
+    margin-left: 150px;
+    background-color: rgba(255, 255, 255, 0.089);
+    
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* display: block; ile resmi bir block ögeye dönüştürdüm ve ardından sağdan ve soldan otomatik ayarlayak ortaladaım. */
+    margin-top: 31px;
+    margin-bottom: 8px;
+}
+h1{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-size: 18.7pt;
+    text-align: center;
+    margin-bottom: 41px;
+}
+.username{
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',;
+    font-size: 18.9pt;
+    font-weight: normal;
+    margin-left: 100px;
+}
+.sifre{
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',;
+    font-size: 18.9pt;
+    font-weight: normal;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+.giris{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fef536;
+    border-color: #fef536;
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    /* border-radius: 8px; ile burada div in köşelerini ovalleştirdim. */
+}
+
+.password{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fef536;
+    border-color: #fef536;
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    /* border-radius: 8px; ile burada div in köşelerini ovalleştirdim. */
+}
+button{
+    float: right;
+    margin-left: 58px;
+    font-size: 17.8pt;
+    font-weight: bolder;
+    padding: 12px 32px;
+    background: #fef536;
+    border-radius:8px;
+
+}
+.checkbox{
+    margin-left: 100px;
+    width: 25px;
+    height: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.checkandgiris{
+    display:flex;
+    /* 3 divi yan yana getirmek için yeni bir div açıp hepsini içine ekledim. ve display:flex ile de hepsini yan yana getirdim */
+
+}
+h3{
+    margin-left: 5px;
+    font-size: 14.1pt;
+    font-weight: normal;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.metin{
+    margin-bottom: auto;
+    margin-top: auto;
+    color: aliceblue;
+    font-size: 50pt;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,  'Open Sans';
+    font-weight: bolder;
+    margin-left: 150px;
+
+
+}
