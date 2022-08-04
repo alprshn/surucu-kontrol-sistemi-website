@@ -1,5 +1,5 @@
 # Sürücü Kontrol Sistemi 
-Bu proje teknofest projesi için Alper Şahin tarafından geliştirilmiştir. Html CSS ve JS programlama dilleri kullanılmmıştır. Proje henüz demo aşamasındadır daha bitmemiştir.
+Bu proje teknofest için geliştirilmiştir. Html CSS ve JS programlama dilleri kullanılmıştır. Proje henüz demo aşamasındadır daha bitmemiştir.
 
 
 ## Kullanıcı Giriş
